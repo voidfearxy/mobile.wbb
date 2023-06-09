@@ -48,14 +48,14 @@
 
     <script>
         document.getElementById("search-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Formun normal gönderimini engelle
+    event.preventDefault();
 
     var input = document.getElementById("inp-search");
-    if (input.value.trim() !== "") { // Girilen değer boş değilse
-        var searchQuery = input.value.trim(); // Arama sorgusunu al
-        var url = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery); // Arama sorgusunu URL'ye ekle
-        window.open(url, "_blank"); // Yeni pencerede Google'da arama yap
-        input.value = ""; // Input alanını temizle
+    if (input.value.trim() !== "") { 
+        var searchQuery = input.value.trim();
+        var url = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery);
+        window.open(url, "_blank");
+        input.value = "";
     }
 });
     </script>
