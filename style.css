@@ -8,11 +8,6 @@ body {
 	background-color: black;
 }
 
-#baslik {
-    font-size: 30px;
-    text-align: left;
-    color: rgb(176, 184, 192);
-}
 
 #baslikiki {
     color: rgb(176, 184, 192);
@@ -25,7 +20,7 @@ body {
 }
 
 .uzl {
-    color: rgb(181, 191, 199);
+    color: aliceblue;
 }
 
 .imza {
@@ -40,6 +35,12 @@ body {
     text-align: center;
     margin-top: 16px;
     width: 30px;
+}
+
+.imza a{
+    text-shadow: 1px 1px rgb(121, 112, 112);
+    text-decoration: none;
+
 }
 
 .imza div a {
@@ -107,4 +108,5 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
