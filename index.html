@@ -48,9 +48,16 @@
 
     <script>
         document.getElementById("search-form").addEventListener("submit", function(event) {
-            var input = document.getElementById("inp-search");
-            input.value = "";
-        });
+    event.preventDefault(); // Formun normal gönderimini engelle
+
+    var input = document.getElementById("inp-search");
+    if (input.value.trim() !== "") { // Girilen değer boş değilse
+        var searchQuery = input.value.trim(); // Arama sorgusunu al
+        var url = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery); // Arama sorgusunu URL'ye ekle
+        window.open(url, "_blank"); // Yeni pencerede Google'da arama yap
+        input.value = ""; // Input alanını temizle
+    }
+});
     </script>
 </body>
 </html>
