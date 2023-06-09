@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="baslikiki">//search//</h1>
+    <form id="search-form" action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" id="inp-search" name="q" placeholder="Google'da ara">
+    </form>
+
+    <div class="linkler">
+        <div class="cevir">
+            <a href="#"><i class="fa fa-language"></i></a>
+        </div>
+        <div class="googletarayici">
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="gpt">
+            <a href="#"><i class="fa fa-comment-dots"></i></a>
+        </div>
+    </div>
+
+    <div class="alt-satir-linkler">
+        <div class="youtube">
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="instagram">
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="imza">
+        <a href=""><p class="uzl">Coded by</p></a>
+
+        <div class="github">
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="instagram">
+            <a href=""><i class="fab fa-instagram"> </i></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            var input = document.getElementById("inp-search");
+            input.value = "";
+        });
+    </script>
+</body>
+</html>
