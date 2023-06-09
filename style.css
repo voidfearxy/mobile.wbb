@@ -2,6 +2,10 @@ body {
     display: block;
     background: url("res/walp4.png");
     background-position: center top;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: black;
 }
 
 #baslik {
@@ -103,4 +107,11 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width:900px) {
+    body{
+        font-size: xx-large;
+    }
+    
 }
